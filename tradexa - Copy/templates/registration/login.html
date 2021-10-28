@@ -8,7 +8,7 @@
 
      <div class="container-fluid">
        <div class="row justify-content-center" >
-           <div class="col-4 mt-4 pt-5 justify-content-center text-light">
+           <div style="border-radius: 20px;position: relative;top: 50px;" class="col-3 mt-4 pt-5 justify-content-center text-dark jumbotron">
             
 
             <h1 class="text-center">LOGIN</h1><br>
@@ -21,9 +21,28 @@
     <form method="post" action="">
         {% csrf_token %}
         {{form|crispy}}
-        <div class="col-12 TEXT-CENTER pt-4"><input class="btn btn-success btn-block" type="submit" /></div>
+        <div  class="col-12 TEXT-CENTER pt-4"><input style="width:100px" class="btn btn-success " type="submit" /></div>
+
+    
+        
     </form>
         
+           </div>
+           <div class="col-2"></div>
+
+           <div style="border-radius: 20px;position: relative;top: 50px;" class="col-3 jumbotron">
+            <h5>Admin credentials:</h5><br>
+            <p>Username : tradexa</p>
+            <p>Password : tradexa</p><br>
+
+
+
+            <hr>
+            <h3>Refer my projects</h3><br>
+
+            <h5><a href="https://surendra.pythonanywhere.com/">Definition adder (mobile)</a></h5><br>
+            <h5><a href="https://surendrasrikakolapu.pythonanywhere.com/">School App  (responsive)</a></h5><br>
+            <p></p>
            </div>
        </div>
      </div>
